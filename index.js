@@ -1,11 +1,9 @@
-
 import express, { response } from "express";
 
-// I DELIBERATELY PUT CONFIG.JS IN GITIGNORE! THE CODE WILL NOT WORK WITHOUT THESE TWO VARIABLES
+// I DELIBERATELY PUT CONFIG.JS IN GITIGNORE! THE CODE WILL NOT WORK WITHOUT THESE TWO VARIABLES. READ THE README
 import { PORT, mongoDBURL } from "./config.js";
 
 import mongoose from "mongoose";
-import { Book } from "./models/bookModel.js";
 import booksRoute from "./routes/booksRoute.js";
 
 const app = express();
